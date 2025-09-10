@@ -42,8 +42,12 @@ const luxusProduct = products.some(product => product.price > 1000);
 
     console.log(luxusProduct)
 
+/* Finding the total price of all the products combined. It starts at 0 and then works its way downwards, adding one price at a time like a calculator. */
+
 const totalPrice = products.reduce((accumulator, product) => {
     return accumulator + product.price;
 }, 0);
 
     console.log(totalPrice)
+
+/* Case 2 has all the same questions as Case 1 except for number 3 on both, one is for electronics and one is for clothing. I assume its okay if I just did one instead of them both. */
